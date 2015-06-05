@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+	<link rel = "stylesheet" type = "text/css" href = "pickemLogin.css">
+</head>
+
+
+<body>
+<div id = "container">
+<div class = "pageHead">Welcome to Seth's Pro Pick'em Website</div><br>
+<div class = "welcome">Hello and welcome to my website. If you have not yet visited here before, please click <a href = "http://web.engr.oregonstate.edu/~westonse/newFinal/createAccount.php"> here </a> to create an account and begin playing!</div>
+<br>
+
+<div class = "intro">
+<h2>A quick explanation of the site: </h2>
+<p> This site is a basic pick em website for the three major pro sports leagues in America (NFL,NBA,MLB). Users can create an account
+and specify what your groupname is. During account creation users must specify what your groupname is and this can be a new group that you are creating or 
+a group that you know to already be in existence. This group of people are the people you will be picking games against. In  this site users are able 
+to search for available games in the three major pro sports for the current day except for the NFL search (because it is the offseason the search will only return 
+results for week one of the NFL season because those are the next available games). Users can then add any game that is found by the search to the group for each 
+member of the group to pick. Users can select which team they want to pick for each game and 1 point is awarded for a correct pick on a game. The games are automatically 
+updated via the sportsRadar API and points are awarded upon users viewing the results of the game. Note that once the game has started users cannot change their pick
+and if a game found for the current day is over then users may not add the game. Users can also post "tweets" of 140 characters or less in order to communicate some interesting 
+information or simply talk trash to group members. Anyways, thats just about it so go and enjoy my pick em website! </p>
+</div>
+<br><br><br><br><br><br>
+<div class = "userInput">
+<input type='text' id='username'> <p class = "enter"> Enter Username </p> </input>
+<input type='password' id = 'password'> <p class = "enter"> Enter Password </p> </input>
+<input type='button' id='check_username' value='Login'>  
+<div id='username_result'></div>  
+</div>
+</div>
+		
+</body>
+
+<script type="text/javascript" src="jquery-2.1.4.js"></script>
+	
+<script>
+$(document).ready(function() {  
+  
+        //the min chars for username  
+        var min_chars = 3;  
+  
+        //result texts  
+        var characters_error = 'Minimum amount of chars is 3';  
+        var checking_html = 'Checking...';  
+  
+        //when button is clicked  
+        $('#check_username').click(function(){  
+            //run the character number check  
+            if($('#username').val().length < min_chars){  
+                //if it's bellow the minimum show characters_error text '  
+                $('#username_availability_result').html(characters_error);  
+            }else{  
+                //else show the cheking_text and run the function to check  
+                $('#username_result').html(checking_html);  
+                check_username();  
+            }  
+        });  
+ 
+    
+    var timeToDisplay = 20000;
+
+    var slideshow = $('#container');
+    var urls = [
+       'http://static.foxsports.com/content/fscom/img/2011/09/29/8_20110929225029241_600_400.JPG',
+       'http://www.eonline.com/eol_images/Entire_Site/2014513/rs_634x1141-140613051823-634.Michael-Jordan-JR-61314.jpg',
+       'http://static.foxsports.com/content/fscom/img/2011/09/29/4_20110929225008233_600_400.JPG',
+	   'http://blog.lenovo.com/images/uploads/blog/Rice.jpg',
+	   'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs_mbe6eTzMR5zRErV4X6JUhcpB7I69fO_drNS219HpyHkxfh4rg',
+	   'https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/192348/0761574001426956572_filepicker.jpg',
+	   'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSYkNYkfi5UakNg47_wsHxobv6skfsUg-Ty5yI1VBkLbgZA8o-vA',
+	   'http://tensportsclub.com/wp-content/uploads/2014/08/Babe-Ruth-4.jpg',
+	   'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8vMV0b1QneygdJEi_UBguS8YUoWzuzmK4oVbsxqk1FtZ9FDdo2w'
+    ];
+
+    var index = 0;
+    var transition = function() {
+        var url = urls[index];
+
+        slideshow.css('background-image', 'url(' + url + ')');
+
+        index = index + 1;
+        if (index > urls.length - 1) {
+            index = 0;
+        }
+    };
+
+    var run = function() {
+        transition();
+        slideshow.fadeIn('slow', function() {
+            setTimeout(function() {
+                slideshow.fadeOut('slow', run);
+            }, timeToDisplay);
+        });
+    }
+
+    run();
+ });
+function check_username(){  
+ 
+        //get the username  
+        var username = $('#username').val();  
+		var password = $('#password').val();  
+ 
+        //use ajax to run the check  
+        $.post("verifyLogin.php", { username: username, password: password},  
+            function(result){  
+                if(result == 1){  
+                    window.location.replace("http://web.engr.oregonstate.edu/~westonse/newFinal/home.php?name=" + username);
+				
+                }else{  
+                     $('#username_result').html('Username or password not found');  
+                }  
+        });  
+  
+}  
+
+</script>
+</html>

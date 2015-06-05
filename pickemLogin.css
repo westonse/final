@@ -1,0 +1,94 @@
+.pageHead {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 1300px;
+  padding: 32px;
+  overflow: hidden;
+  border: 3px solid;
+  font: normal 40px/1 "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
+  background: url("http://www.rcwilley.com/blog/36/4044/iStock_basketball_court-56749.jpg");
+  background-position: 59% 52%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 6px 4px rgba(4,17,247,0.67) ;
+  box-shadow: 0 0 6px 4px rgba(4,17,247,0.67) ;
+  text-shadow: 4px 0 3px rgba(18,18,229,1) ;
+}
+#container{
+  width: 100%;
+  height: 1200px;
+}
+.welcome {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 600px;
+  float: left;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 20px/1 "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: -webkit-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: -moz-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+.intro{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  float: right;
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 13px/1 "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: -webkit-linear-gradient(-90deg, rgba(0,0,0,1) 0, rgba(18,18,229,1) 100%);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0, rgba(18,18,229,1) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0, rgba(18,18,229,1) 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+.enter{  
+  width: 100px;
+  background-color: black;
+  font: normal 13px/1 "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,1);
+}

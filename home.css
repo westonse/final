@@ -1,0 +1,159 @@
+.Standings {
+  float: left;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 30%;
+  float: left;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 20px/1 "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: -webkit-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: -moz-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+  position: absolute;
+}
+.searchForm {
+  float: right;
+  height:100%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 30%;
+  float: left;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 12px/1 "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,1);
+  text-align: left;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: -webkit-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: -moz-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+  position: absolute;
+}
+.gamesToPlay{
+  float: left;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 30%;
+  float: rigt;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 13px/1 "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,1);
+  text-align: left;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: -webkit-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: -moz-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+  position: absolute;
+}
+.messageBoard{
+  height: 150%;
+  float: left;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 100%;
+  float: left;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 13px/1 "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,1);
+  text-align: left;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: -webkit-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: -moz-repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background: repeating-radial-gradient(closest-side, rgba(18,18,229,1) 0, rgba(0,0,0,1) 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+  position: absolute;
+}
+#container{
+  width: 100%;
+  height: auto !important;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+td{
+	border: solid thin;
+	text-align: center;
+	height: 50px;
+	width: 50px;
+}
+table{
+	border: solid thin;
+}
+th{
+	border: solid thin;
+}
+.user{
+	border: solid thin;
+}
+.userContent{
+	border: solid thin;
+	width = 50%;
+}
+.activeGame{
+	border: solid thin;
+}
+.searchGame{
+	border: solid thin;
+}
