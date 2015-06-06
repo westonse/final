@@ -27,7 +27,6 @@
   -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
   box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
-  position: absolute;
 }
 .searchForm {
   float: right;
@@ -58,7 +57,7 @@
   -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
   box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
-  position: absolute;
+  
 }
 .gamesToPlay{
   float: left;
@@ -89,10 +88,10 @@
   -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
   box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
-  position: absolute;
+  
 }
 .messageBoard{
-  height: 150%;
+  height: 100%;
   float: left;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -120,11 +119,11 @@
   -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
   box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
-  position: absolute;
+ 
 }
 #container{
   width: 100%;
-  height: auto !important;
+  height: 100%;
 }
 html{
 	height: 100%;
